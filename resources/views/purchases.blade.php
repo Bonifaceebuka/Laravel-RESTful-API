@@ -20,7 +20,7 @@ List Of Purchases Made
 				<tr>
 					<th>Item name</th>
 					<th>Quantity Purchased</th>
-					<th>Normal Price</th>
+					<th>Normal Price($)</th>
 					<th>Unit Price($)</th>
 					<th>Amount Paid($)</th>
 					<th>Profit($)</th>
