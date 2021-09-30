@@ -33,14 +33,14 @@ This application is built with the following technologies:
 
 ### The Screenshots of the front-end of the system
 #### The Home Page
-<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/main/screenshots/home.PNG">
+<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/home.PNG">
 
 #### Adding New Item via AJAX
-<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/main/screenshots/create-new-item.PNG">
+<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/create-new-item.PNG">
 
 #### Items List By Category
-<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/main/screenshots/items-by-category.PNG">
+<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/items-by-category.PNG">
 
 #### Items List By Category
-<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/main/screenshots/items-by-category.PNG">
+<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/items-by-category.PNG">
 
