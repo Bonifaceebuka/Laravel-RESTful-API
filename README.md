@@ -42,7 +42,7 @@ This application is built with the following technologies:
 <img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/new-added-item.PNG">
 
 #### Update The Unit Price Of An Item Via AJAX
-<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/update-unit-price.PNG">
+<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/Update-unit-price.PNG">
 
 #### Prompt for Removing An Item. Done with SweetAlert Plugin
 <img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/screenshots/delete-item-prompt.PNG">
