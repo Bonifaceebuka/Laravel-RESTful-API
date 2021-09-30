@@ -18,7 +18,7 @@ class ItemController extends Controller
      
     public function index()
     {
-        $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');        
+        $categories = Item::OrderBy('category','ASC')->groupBy('category')->get('category');        
         return view('index',['categories'=>$categories]);
     }
     public function list_items()
