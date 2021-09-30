@@ -40,7 +40,7 @@ class ItemController extends Controller
     public function create()
     {
         $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');        
-        return view('create',['items'=>$categories]);
+        return view('create',['categories'=>$categories]);
     }
 
     /**
