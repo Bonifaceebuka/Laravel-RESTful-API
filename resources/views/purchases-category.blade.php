@@ -29,7 +29,7 @@ List of Purchases Made, Profit & Loss
 				@foreach($purchases as $purchases)
 				<tr>
 				<td>{{$purchases->category}}</td>
-				<td>{{number_format($purchases->amount_paid}}</td>
+				<td>{{number_format($purchases->amount_paid)}}</td>
                 <td><strong>
                     @if($purchases->profit > 0)<span class="text-success">{{$purchases->profit}}</span>
                 @else <span class="text-danger">{{$purchases->profit}}</span>
