@@ -30,6 +30,9 @@ This application is built with the following technologies:
 8. Start your server with `php artisan serve`
 	Visit localhost:8000/ to see the front-end of the application
 
+#### The ERD Of The System( Done using MYSQL Workbench)
+<img src="https://github.com/Bonifaceebuka/assignment-for-a-software-engineer/blob/master/ERD/ERD.png">
+
 
 ### The Screenshots of the front-end of the system
 #### The Home Page
