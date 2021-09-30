@@ -28,7 +28,7 @@ class ItemController extends Controller
     }
     public function category($category)
     {
-        $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');
+        $categories = Item::OrderBy('category','ASC')->groupBy('category')->get('category');
         $items = Item::where('category',$category)->get();
         return view('category',['categories'=>$categories,'items'=>$items,'category'=>$category]);
     }
@@ -39,7 +39,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');        
+        $categories = Item::OrderBy('category','ASC')->groupBy('category')->get('category');        
         return view('create',['categories'=>$categories]);
     }
 
@@ -89,7 +89,7 @@ class ItemController extends Controller
     public function cart($id)
     {
       $item = Item::find($id);
-      $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');        
+      $categories = Item::OrderBy('category','ASC')->groupBy('category')->get('category');        
       return view('cart',['item'=>$item,'categories'=>$categories]);
     }
     
@@ -102,40 +102,7 @@ class ItemController extends Controller
      */
     public function show($id)
     {
-            $item_detail = Item::findOrfail($id);
-        if ($item_detail !=null) {
-            $item_authors = explode(',',$item_detail->authors);
-            $total_authors = count($item_authors);
-            $authors = [];
-            foreach ($item_authors as $author) {
-                $authors[] = $author;
-            }
-            // return $item_authors;
-             return response()->json([
-                    'status_code'=> 200,
-                    'status_message'=> 'suceess',
-                    'data'=>[
-                                'item'=>[
-                                            'id'=>$item_detail->id,
-                                            'name'=>$item_detail->name,
-                                            'isbn'=>$item_detail->isbn,
-                                            'authors'=>[
-                                                        $authors
-                                                        ],
-                                            'number_of_pages'=>$item_detail->number_of_pages,
-                                            'publisher'=>$item_detail->publisher,
-                                            'country'=>$item_detail->country,
-                                            'release_date'=>$item_detail->release_date
-
-                                        ]
-                            ]
-                    ],201);
-        }
-        else{
-            return response()->json([
-                    'message'=> 'Invalid Item ID'
-                ]);
-        }
+           
         
     }
 

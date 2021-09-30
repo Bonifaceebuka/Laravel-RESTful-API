@@ -10,7 +10,7 @@ class PurchaseController extends Controller
 {
     public function index(){
         $purchases = Purchase::OrderBy('profit','DESC')->get();
-        $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');        
+        $categories = Item::OrderBy('category','ASC')->groupBy('category')->get('category');        
         return view('purchases',['purchases'=>$purchases,'categories'=>$categories]);
     }
     public function category(){
@@ -19,7 +19,7 @@ class PurchaseController extends Controller
          items.category FROM items, purchases WHERE 
         purchases.item_id = items.id GROUP BY items.category;');
         // return $purchases;
-        $categories = Item::OrderBy('item_name','ASC')->groupBy('category')->get('category');        
+        $categories = Item::OrderBy('category','ASC')->groupBy('category')->get('category');        
         return view('purchases-category',['purchases'=>$purchases,'categories'=>$categories]);
     }
     public function buy(Request $request,$id)
