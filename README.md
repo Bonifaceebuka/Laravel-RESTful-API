@@ -4,6 +4,7 @@ This application is built with the following technologies:
 2. CSS,
 3. Bootstrap(3.3.7)
 4. Jquery(1.12.4)
+4. SweetAlert
 5. AjAX
 6. PHP(7.3.29) and Apache/2.4.48
 7. Laravel Framework(7.18.0)
